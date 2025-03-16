@@ -2,10 +2,11 @@ from django.contrib import admin
 from django.urls import path, include
 from django.http import HttpResponse
 from rest_framework.routers import DefaultRouter
-from portfolio.views import ProjectViewSet
+from portfolio.views import ProjectViewSet, SkillViewSet
 
 router = DefaultRouter()
 router.register(r'projects', ProjectViewSet)
+router.register(r'skills', SkillViewSet)
 
 def home_view(request):
     return HttpResponse("<h1>Welcome to My Django API</h1>")
