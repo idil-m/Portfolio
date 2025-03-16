@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'motion/react';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';

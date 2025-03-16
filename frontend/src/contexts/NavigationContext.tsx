@@ -11,7 +11,7 @@ interface NavigationContextType {
   scrollToSection: (sectionId: SectionId) => void;
   navigateToSection: (sectionId: SectionId, path: string) => void;
   inViewport: (sectionId: SectionId) => boolean;
-  registerSection: (sectionId: SectionId, ref: React.RefObject<HTMLElement>) => void;
+  registerSection: (sectionId: SectionId, element: HTMLElement) => void;
   pathToSectionId: Record<string, SectionId>;
 }
 
@@ -28,22 +28,22 @@ export const NavigationProvider: React.FC<NavigationProviderProps> = ({
   pathMap
 }) => {
   const [activeSection, setActiveSection] = useState<SectionId>('home');
-  const [sectionRefs, setSectionRefs] = useState<Record<SectionId, React.RefObject<HTMLElement>>>({});
+  const [sectionRefs, setSectionRefs] = useState<Record<SectionId, HTMLElement>>({});
   const [sectionInView, setSectionInView] = useState<Record<SectionId, boolean>>({});
   
   const location = useLocation();
   const navigate = useNavigate();
 
   // Register section refs
-  const registerSection = useCallback((sectionId: SectionId, ref: React.RefObject<HTMLElement>) => {
-    setSectionRefs(prev => ({ ...prev, [sectionId]: ref }));
+  const registerSection = useCallback((sectionId: SectionId, element: HTMLElement) => {
+    setSectionRefs(prev => ({ ...prev, [sectionId]: element }));
   }, []);
 
   // Smooth scroll to a section
   const scrollToSection = useCallback((sectionId: SectionId) => {
-    const sectionRef = sectionRefs[sectionId];
-    if (sectionRef && sectionRef.current) {
-      sectionRef.current.scrollIntoView({ 
+    const element = sectionRefs[sectionId];
+    if (element) {
+      element.scrollIntoView({ 
         behavior: 'smooth',
         block: 'start'
       });
@@ -93,8 +93,8 @@ export const NavigationProvider: React.FC<NavigationProviderProps> = ({
       return Object.entries(pathMap).find(([, id]) => id === sectionId)?.[0];
     };
 
-    Object.entries(sectionRefs).forEach(([sectionId, ref]) => {
-      if (ref.current) {
+    Object.entries(sectionRefs).forEach(([sectionId, element]) => {
+      if (element) {
         const observer = new IntersectionObserver((entries) => {
           entries.forEach((entry) => {
             setSectionInView(prev => ({
@@ -114,7 +114,7 @@ export const NavigationProvider: React.FC<NavigationProviderProps> = ({
           });
         }, observerOptions);
         
-        observer.observe(ref.current);
+        observer.observe(element);
         observers.push(observer);
       }
     });

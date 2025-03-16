@@ -13,7 +13,9 @@ const Section: React.FC<SectionProps> = ({ id, className = '', children }) => {
   const { registerSection } = useNavigation();
 
   useEffect(() => {
-    registerSection(id, sectionRef);
+    if (sectionRef.current) {
+      registerSection(id, sectionRef.current);
+    }
   }, [id, registerSection]);
 
   return (
