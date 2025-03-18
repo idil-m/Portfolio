@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { FiExternalLink, FiGithub } from 'react-icons/fi';
+//import { FiExternalLink, FiGithub } from 'react-icons/fi';
 import { FaGithub, FaExternalLinkSquareAlt } from 'react-icons/fa';
 import photo1 from "@/assets/photo1.jpg"
 import photo2 from "@/assets/photo2.png"
