@@ -2,10 +2,10 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { FiExternalLink, FiGithub } from 'react-icons/fi';
 
-import photo1 from "@/assets/photo1.avif"
-import photo2 from "@/assets/photo2.avif"
-import photo3 from "@/assets/photo3.avif"
-import photo4 from "@/assets/photo4.avif"
+import photo1 from "@/assets/photo1.jpg"
+import photo2 from "@/assets/photo2.png"
+import photo3 from "@/assets/photo3.jpg"
+import photo4 from "@/assets/hero-color.png"
 
 interface Project {
   id: number;
@@ -22,32 +22,33 @@ interface Project {
 const projectsData: Project[] = [
   {
     id: 1,
-    title: "Smart Tech",
-    description: "A full-featured online store built with Django and React, featuring product management, user authentication, and payment processing integration with Stripe. The platform includes a responsive design, comprehensive product catalog, and an intuitive shopping cart experience.",
+    title: "SprouTd",
+    description: "A mobile app for plant care with Flutter,Firebase, and OpenAI. Users receive AI-powered plant care tips and auto-generated reminders for watering,fertilizing, and repotting.The intuitive UI ensures easy plant tracking,and real-time data updates keep users engaged in their plant's health.",
     image: photo1,
-    tags: ["Javascripte", "SQL", "React", "Stripe"],
+    tags: [ "Flutter", "Firebase", "OpenAI" ],
     demoUrl: "https://example.com",
-    repoUrl: "https://github.com/yourusername/ecommerce",
+    repoUrl: "https://github.com/idil-m/SmartTech",
     featured: true
   },
   {
     id: 2,
-    title: "SprouTd",
-    description: "A Kanban-style task management application with drag-and-drop functionality, user collaboration, and real-time updates. Team members can create boards, add tasks, assign responsibilities, set due dates, and track progress through customizable workflows.",
+    title: "Smart Tech",
+    description: "An e-commerce platform with React, Node.js, and SQL. Users browse products by category, use AI- powered chat assistance, and make secure transactions via Stripe.  The platform also integrates an AI-powered chat assistance feature and a custom chat box powered by OpenAI, which can help answer any questions and guide users throughout their time on the website.",
     image: photo2,
-    tags: ["Flutter", "Firebase", "OpenAI", "MongoDB"],
+    tags: ["Javascript", "SQL", "React", "Stripe"],
     demoUrl: "https://youtube.com/shorts/LivssUl1ZcA",
+    repoUrl: "https://github.com/yourusername/weather",
 
     featured: true
   },
   {
     id: 3,
-    title: "Weather Dashboard",
-    description: "A weather visualization dashboard that provides real-time weather data and forecasts for locations worldwide. The application fetches data from multiple weather APIs, displays current conditions, hourly and 7-day forecasts, along with interactive charts for temperature, precipitation, and wind patterns.",
+    title: "Photo Labs",
+    description: "A single-page application desgned to offer a dynamic platform for phto exploration, leveraging React for teh front-end to ensure a seamless user interaction with photographic cintent. ",
     image: photo3,
-    tags: ["JavaScript", "API Integration", "Chart.js", "CSS"],
+    tags: ["JavaScript", "API Integration", "React", ],
     demoUrl: "https://example.com",
-    repoUrl: "https://github.com/yourusername/weather",
+    repoUrl: "https://github.com/idil-m/photolabs",
     featured: false
   },
   {
@@ -55,7 +56,7 @@ const projectsData: Project[] = [
     title: "Portfolio Website",
     description: "A personal portfolio website (this one!) showcasing my projects and skills, built with React and Tailwind CSS. Features a responsive design, dark mode support, smooth animations with Framer Motion, and optimized performance metrics.",
     image: photo4,
-    tags: ["React", "Tailwind CSS", "Framer Motion"],
+    tags: ["React", "Tailwind CSS", "Django"],
     demoUrl: "https://example.com",
     repoUrl: "https://github.com/yourusername/portfolio",
     featured: false

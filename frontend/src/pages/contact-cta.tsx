@@ -16,10 +16,10 @@ export default function ContactCTA() {
   });
 
   const socialLinks = [
-    { name: 'Email', icon: <FiMail />, href: 'mailto:your.email@example.com', color: 'text-primary' },
-    { name: 'GitHub', icon: <FiGithub />, href: 'https://github.com/yourusername', color: 'text-foreground' },
-    { name: 'LinkedIn', icon: <FiLinkedin />, href: 'https://linkedin.com/in/yourusername', color: 'text-[#0A66C2]' },
-    { name: 'Twitter', icon: <FiTwitter />, href: 'https://twitter.com/yourusername', color: 'text-[#1DA1F2]' },
+    { name: 'Email', icon: <FiMail />, href: 'mailto:mahamed.idil@gmail.com', color: 'text-primary' },
+    { name: 'GitHub', icon: <FiGithub />, href: 'https://github.com/idil-m', color: 'text-foreground' },
+    { name: 'LinkedIn', icon: <FiLinkedin />, href: 'https://linkedin.com/in/idil-mahamed/', color: 'text-[#0A66C2]' },
+   
   ];
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
