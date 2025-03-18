@@ -25,9 +25,8 @@ const projectsData: Project[] = [
     title: "SprouTd",
     description: "A mobile app for plant care with Flutter,Firebase, and OpenAI. Users receive AI-powered plant care tips and auto-generated reminders for watering,fertilizing, and repotting.The intuitive UI ensures easy plant tracking,and real-time data updates keep users engaged in their plant's health.",
     image: photo1,
-    tags: [ "Flutter", "Firebase", "OpenAI" ],
-    demoUrl: "https://example.com",
-    repoUrl: "https://github.com/idil-m/SmartTech",
+    tags: [ "Flutter", "Firebase", "OpenAI", "GCP" ],
+    demoUrl: "https://youtube.com/shorts/LivssUl1ZcA",
     featured: true
   },
   {
@@ -35,9 +34,8 @@ const projectsData: Project[] = [
     title: "Smart Tech",
     description: "An e-commerce platform with React, Node.js, and SQL. Users browse products by category, use AI- powered chat assistance, and make secure transactions via Stripe.  The platform also integrates an AI-powered chat assistance feature and a custom chat box powered by OpenAI, which can help answer any questions and guide users throughout their time on the website.",
     image: photo2,
-    tags: ["Javascript", "SQL", "React", "Stripe"],
-    demoUrl: "https://youtube.com/shorts/LivssUl1ZcA",
-    repoUrl: "https://github.com/yourusername/weather",
+    tags: ["Javascript", "PostgreSQL", "React", "Stripe", "OpenAI", "MaterialUI"],
+    repoUrl: "https://github.com/idil-m/SmartTech",
 
     featured: true
   },
@@ -47,7 +45,6 @@ const projectsData: Project[] = [
     description: "A single-page application desgned to offer a dynamic platform for phto exploration, leveraging React for teh front-end to ensure a seamless user interaction with photographic cintent. ",
     image: photo3,
     tags: ["JavaScript", "API Integration", "React", ],
-    demoUrl: "https://example.com",
     repoUrl: "https://github.com/idil-m/photolabs",
     featured: false
   },
@@ -56,9 +53,9 @@ const projectsData: Project[] = [
     title: "Portfolio Website",
     description: "A personal portfolio website (this one!) showcasing my projects and skills, built with React and Tailwind CSS. Features a responsive design, dark mode support, smooth animations with Framer Motion, and optimized performance metrics.",
     image: photo4,
-    tags: ["React", "Tailwind CSS", "Django"],
-    demoUrl: "https://example.com",
-    repoUrl: "https://github.com/yourusername/portfolio",
+    tags: ["React", "Tailwind CSS", "Django", "Typescript"],
+    demoUrl: "https://www.idil.ca",
+    repoUrl: "https://github.com/idil-m/Portfolio",
     featured: false
   }
 ];
