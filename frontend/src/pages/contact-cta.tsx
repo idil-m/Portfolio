@@ -3,7 +3,8 @@ import { motion } from 'motion/react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { FiMail, FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
 import { Loader2 } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 export default function ContactCTA() {
@@ -16,9 +17,9 @@ export default function ContactCTA() {
   });
 
   const socialLinks = [
-    { name: 'Email', icon: <FiMail />, href: 'mailto:mahamed.idil@gmail.com', color: 'text-primary' },
-    { name: 'GitHub', icon: <FiGithub />, href: 'https://github.com/idil-m', color: 'text-foreground' },
-    { name: 'LinkedIn', icon: <FiLinkedin />, href: 'https://linkedin.com/in/idil-mahamed/', color: 'text-[#0A66C2]' },
+    { name: 'Email', icon: <MdEmail />, href: 'mailto:mahamed.idil@gmail.com', color: 'text-primary' },
+    { name: 'GitHub', icon: <FaGithub />, href: 'https://github.com/idil-m', color: 'text-foreground' },
+    { name: 'LinkedIn', icon: <FaLinkedin />, href: 'https://linkedin.com/in/idil-mahamed/', color: 'text-[#0A66C2]' },
    
   ];
 

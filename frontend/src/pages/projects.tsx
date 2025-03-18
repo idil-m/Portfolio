@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { FiExternalLink, FiGithub } from 'react-icons/fi';
-
+import { FaGithub, FaExternalLinkSquareAlt } from 'react-icons/fa';
 import photo1 from "@/assets/photo1.jpg"
 import photo2 from "@/assets/photo2.png"
 import photo3 from "@/assets/photo3.jpg"
@@ -184,7 +184,7 @@ function ProjectCard({ project, isReversed = false }: ProjectCardProps): React.R
               whileHover={{ x: 3 }}
             >
               Live Demo
-              <FiExternalLink className="ml-2 h-4 w-4" />
+              <FaExternalLinkSquareAlt className="ml-2 h-4 w-4" />
             </motion.a>
           )}
           {project.repoUrl && (
@@ -194,7 +194,7 @@ function ProjectCard({ project, isReversed = false }: ProjectCardProps): React.R
               whileHover={{ x: 3 }}
             >
               Source Code
-              <FiGithub className="ml-2 h-4 w-4" />
+              <FaGithub className="ml-2 h-4 w-4" />
             </motion.a>
           )}
         </div>
