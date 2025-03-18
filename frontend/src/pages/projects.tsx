@@ -10,7 +10,7 @@ import photo4 from "@/assets/hero-color.png"
 interface Project {
   id: number;
   title: string;
-  description: string;
+  description: string; 
   image: string;
   tags: string[];
   demoUrl?: string; // Made optional
