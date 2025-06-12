@@ -23,7 +23,7 @@ const projectsData: Project[] = [
   {
     id: 1,
     title: "SprouTd",
-    description: "A mobile app for plant care with Flutter,Firebase, and OpenAI. Users receive AI-powered plant care tips and auto-generated reminders for watering,fertilizing, and repotting.The intuitive UI ensures easy plant tracking,and real-time data updates keep users engaged in their plant's health.",
+    description: "A mobile app for plant care with Flutter, Firebase, and OpenAI. Users receive AI-powered plant care tips and auto-generated reminders for watering, fertilizing, and repotting. The intuitive UI ensures easy plant tracking, and real-time data updates keep users engaged in their plant's health.",
     image: photo1,
     tags: [ "Flutter", "Firebase", "OpenAI", "GCP" ],
     demoUrl: "https://youtube.com/shorts/LivssUl1ZcA",
@@ -42,7 +42,7 @@ const projectsData: Project[] = [
   {
     id: 3,
     title: "Photo Labs",
-    description: "A single-page application desgned to offer a dynamic platform for phto exploration, leveraging React for teh front-end to ensure a seamless user interaction with photographic cintent. ",
+    description: "A single-page application designed to offer a dynamic platform for photo exploration, leveraging React for the front-end to ensure a seamless user interaction with photographic content. ",
     image: photo3,
     tags: ["JavaScript", "API Integration", "React", ],
     repoUrl: "https://github.com/idil-m/photolabs",
